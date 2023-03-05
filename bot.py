@@ -3,8 +3,7 @@ import discord
 import time
 import random
 
-BOT_TOKEN = 'MTA4MjE3MTIwMzExMzk5NjM1OA.GycSNW.OgoZxVPb7tXiSr7mxeTo8UuSZa7RPd14dpIJd4'
-CHANNEL_ID = 1082185743306326106
+BOT_TOKEN = 
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
@@ -23,7 +22,8 @@ async def on_message(message):
         mes = 'turtwig!'
     else: 
         mes = 'twig!'
-    channel = bot.get_channel(CHANNEL_ID)
-    await channel.send(mes)
+    if str(message.channel) == 'turtwig':
+        channel = bot.get_channel(message.channel.id)
+        await channel.send(mes)
     return
 bot.run(BOT_TOKEN)

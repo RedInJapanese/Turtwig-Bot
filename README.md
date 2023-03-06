@@ -12,5 +12,5 @@ Discord bot that simulates rubber duck debugging, but with turtwig.
 python3 bot.py
 ```
 
-![Imgur]([https://imgur.com/a/A46KhLy](https://imgur.com/a/A46KhLy))
+![Imgur](https://imgur.com/a/A46KhLy)
 
